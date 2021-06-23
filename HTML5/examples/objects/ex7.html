@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom.css" />
+    <script src="card.js"></script>
+</head>
+<body>
+    <div class="container p-2">
+        <div class="row">
+            <script>
+                var result = ""
+                for (var cardstore of productstore) {
+                    result += `<div class="col-lg-4">`
+                    result += ` <div class="card">
+                                            <img src='${cardstore.image}' class="img-card-img-top" />
+                                            <div class="card-body text-center">
+                                                <h6 class="card-title">${cardstore.title}</h6>
+                                                <p class="card-text">
+                                                    $${cardstore.price}
+                                                </p>
+                                            </div>
+                                </div>
+                                `
+                    result += "</div>"
+                }
+
+
+                document.write(result)
+            </script>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

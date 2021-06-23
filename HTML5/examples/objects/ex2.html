@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <select>
+
+        <option>Days</option>
+    
+        <script>
+    
+            for (var x = 1; x <= 31; x++) {
+                document.write(`<option>${x}</option>`)
+            }
+        </script>
+    </select>
+    
+    
+    
+    <select>
+    
+        <option>Months</option>
+    
+        <script>
+    
+            var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            //12-> length of the [months.length]
+            for (var index = 0; index < months.length; index++) {
+                document.write(`<option>${months[index].slice(0, 3)}</option>`)
+            }
+        </script>
+    </select>
+    
+    
+    
+    <select>
+    
+        <option>Year</option>
+    
+        <script>
+    
+            for (var x = 2021; x >= 1905; x--) {
+                document.write(`<option>${x}</option>`)
+            }
+        </script>
+    </select>
+</body>
+</html>
